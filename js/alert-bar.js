@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function checkCookie() {
-	    var cookie=getCookie("khm-alert-bar");
+	    var cookie=getCookie("rose-alert-bar");
 	    if (cookie != "") {
 	    	// Don't show alert bar.
 	        $('.alert-bar').hide();
@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
 
 	$(".alert-bar .fa-times").click(function () {
 		// Only set the cookie if user clicks close.
-		setCookie("khm-alert-bar", "closed", 1); 
+		setCookie("rose-alert-bar", "closed", 1); 
 		$('.alert-bar').slideUp();
 	    $('.mini-alert').slideDown(); 
 	    return;
@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 
 	$(".mini-alert").click(function () {
 		// Expire the cookie if they click open.
-		document.cookie = "khm-alert-bar=; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+		document.cookie = "rose-alert-bar=; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 	    $('.alert-bar').slideDown();
 	    $('.mini-alert').slideUp();
 	    return;
