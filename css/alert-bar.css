@@ -1,0 +1,47 @@
+.alert-bar {
+    width: 100%;
+    background-color: #c7254e;
+	padding: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px !important;
+	line-height: 20px !important;
+	text-transform: uppercase;
+    z-index: 999;
+}
+.alert-bar a {
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+.alert-bar a:hover {
+    color: #CCCCCC !important;
+}
+.alert-bar .fa-exclamation-triangle {
+    margin-right: 10px;
+}
+.alert-bar .fa-times {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: #FFFFFF;
+}
+.alert-bar .fa-times:hover {
+    cursor: pointer;
+}
+.mini-alert {
+    float: right;
+    background-color: #c7254e;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px !important;
+    line-height: 18px !important;
+}
+.mini-alert:hover {
+    cursor: pointer;
+}
+
+/* FIXME: Remove this part */
+body:before {
+    z-index: -2 !important;
+}
